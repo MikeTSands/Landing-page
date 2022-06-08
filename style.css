@@ -2,12 +2,25 @@
     text-decoration: none;
 }
 
+body{
+    max-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    flex: 1;
+}
+
 .header,
-.container{
+.container,
+.footer{
     background-color: #1F2937;
 }
 
 .header{
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,7 +62,6 @@ ul{
     background-color: gray;
     margin-right: 150px;
 }
-
 
 .container-text{
     margin-left: 150px;
@@ -115,4 +127,69 @@ ul{
     padding: 8px;
     display: flex;
     justify-content: center;
+}
+
+.quote-container{
+    background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.quote{
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+    max-width: 800px;
+}
+
+.person{
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 24px;
+    align-self: center;
+    margin-left: 100px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.box{
+    background-color: #3882F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    width: 100%;
+    border-radius: 8px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.box-text{
+    color: white;
+    margin-left: 150px;
+}
+
+.box-sign-up{
+    color: white;
+    background-color: #3882F6;
+    border-radius: 8px;
+    outline: white;
+    margin-right: 150px;
+    padding: 8px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 30px;
 }
